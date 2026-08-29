@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lima Sumbu — Kenali Caramu Sendiri</title>
+<meta name="description" content="Tes kepribadian lima sumbu dengan rentang ketidakpastian, cerita berdua, dan lensa kelekatan serta nilai hidup. Jalan penuh di perangkatmu.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<section id="home">
+  <h1>Kenali caramu<br>sendiri.</h1>
+  <p class="lede">Lima hal yang bikin kamu beda: dari mana energimu datang, cara kamu menyerap info, cara kamu memutuskan, ritme harianmu, dan seberapa tenang kamu menjalaninya.</p>
+
+  <div class="card">
+    <h2>Mau tes yang mana?</h2>
+    <div class="pick" id="mode">
+      <button data-m="kilat" aria-pressed="false"><span class="n">10</span><span><strong>Kilat</strong><span>Sekitar 2 menit. Buat gambaran kasar.</span></span></button>
+      <button data-m="standar" aria-pressed="true"><span class="n">±20</span><span><strong>Standar</strong><span>Berhenti sendiri kalau sudah cukup yakin.</span></span></button>
+      <button data-m="lengkap" aria-pressed="false"><span class="n">40</span><span><strong>Lengkap</strong><span>Sekitar 8 menit. Hasil paling stabil.</span></span></button>
+    </div>
+    <h2 style="margin-top:20px">Kamu ngisi sebagai siapa?</h2>
+    <div class="pick" id="ctx">
+      <button data-c="kerja" aria-pressed="true"><span><strong>Aku yang di tempat kerja</strong><span>Caramu waktu lagi kerja</span></span></button>
+      <button data-c="rumah" aria-pressed="false"><span><strong>Aku yang di rumah</strong><span>Caramu sama orang terdekat</span></span></button>
+      <button data-c="apa" aria-pressed="false"><span><strong>Apa adanya</strong><span>Tanpa mikirin situasi tertentu</span></span></button>
+    </div>
+    <button class="btn" id="go">Mulai</button>
+    <p class="dimtxt" style="margin:12px 0 0">Soalnya diacak tiap kali kamu tes, jadi nggak akan sama persis.</p>
+  </div>
+
+  <div id="banner"></div>
+
+  <div class="card">
+    <h2>16 tipe, sekilas</h2>
+    <div class="grid16" id="homeGrid"></div>
+    <div class="peek" id="homePeek"></div>
+  </div>
+
+  <div class="note"><b>Sebelum mulai</b>Ini bukan tes resmi dan bukan alat diagnosis. Anggap saja cermin buat mikir, bukan label yang mengikat.</div>
+</section>
+
+<section id="quiz" class="hidden">
+  <div class="card">
+    <div class="prog" id="prog"></div>
+    <p class="dimtxt" id="qmeta" style="margin:0"></p>
+    <div class="qtext" id="qtext"></div>
+    <div class="scale" id="scale"></div>
+    <div class="ends"><span>Nggak banget</span><span>Aku banget</span></div>
+    <div class="qnav"><button class="btn soft mini" id="back">Kembali</button><span class="dimtxt" id="qcount"></span></div>
+  </div>
+</section>
+
+<section id="out" class="hidden"></section>
+
+<footer>Semua data cuma tersimpan di perangkatmu.</footer>
+</div>
+
+<script src="src/data-items.js"></script>
+<script src="src/data-types.js"></script>
+<script src="src/data-lens.js"></script>
+<script src="src/relations.js"></script>
+<script src="src/story.js"></script>
+<script src="src/profile-code.js"></script>
+<script src="src/share-card.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>
