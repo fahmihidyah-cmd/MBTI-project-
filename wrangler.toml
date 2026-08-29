@@ -1,0 +1,10 @@
+# Konfigurasi Cloudflare Workers — situs statis.
+# Tanpa blok [assets] ini, Worker cuma nyajiin satu respons dan
+# file CSS/JS bakal 404. Itu yang bikin halaman keluar polos.
+
+name = "its-you"
+compatibility_date = "2026-08-29"
+
+[assets]
+directory = "./public/"
+not_found_handling = "404-page"
